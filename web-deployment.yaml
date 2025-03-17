@@ -43,6 +43,8 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
+      envFrom:
+        configMapRef: web-deployment-configmap
 status:
   availableReplicas: 3
   conditions:
